@@ -1,0 +1,2 @@
+pyyaml==6.0
+deepdiff==5.8.1
