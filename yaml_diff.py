@@ -1,5 +1,4 @@
 import argparse
-import pprint
 import sys
 import yaml
 import deepdiff as dd
@@ -60,7 +59,6 @@ def dict_str_to_dot_str(dict_str):
 
 def diffing(yaml_objects):
     diffs = dd.DeepDiff(yaml_objects[0], yaml_objects[1], verbose_level=2)
-    pprint.pp(diffs)
     diff_str_array = []
     # diffs contains a mapping from the string
     # 'values_changed' to a dictionary containing keys that have differing values
